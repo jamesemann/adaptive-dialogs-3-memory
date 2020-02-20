@@ -1,0 +1,34 @@
+{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "[send] DIALOG SCOPE DEMO (CHILD DIALOG)"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "dialog.dialogScopedValue == null",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "[send] udialog.dialogScopedValue is null, prompting for value"
+            },
+            {
+              "$kind": "Microsoft.TextInput",
+              "prompt": "[prompt] what should I store in dialog.dialogScopedValue",
+              "property": "dialog.dialogScopedValue"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "[send] dialog.dialogScopedValue is @{dialog.dialogScopedValue}"
+        }
+      ]
+    }
+  ]
+}

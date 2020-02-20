@@ -1,0 +1,49 @@
+{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "[send] TURN SCOPE DEMO"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "turn.turnScopedValue1 == null",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "[send] turn.turnScopedValue1 is null, prompting for value"
+            },
+            {
+              "$kind": "Microsoft.TextInput",
+              "prompt": "[prompt] what should I store in turn.turnScopedValue1",
+              "property": "turn.turnScopedValue1"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "[send] turn.turnScopedValue1 is @{turn.turnScopedValue1}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "prompt": "[prompt] what should I store in turn.turnScopedValue2",
+          "property": "turn.turnScopedValue2"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "turn.turnScopedValue1 == null",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "[send] turn.turnScopedValue1 is null again"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

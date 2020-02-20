@@ -1,0 +1,25 @@
+{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "activity": "[send] DIALOG SCOPE DEMO (PARENT DIALOG)"
+        },
+        {
+          "$type": "Microsoft.BeginDialog",
+          "includeActivity": false,
+          "dialog": "dialogScoped-child"
+        },
+        {
+          "$type": "Microsoft.BeginDialog",
+          "includeActivity": false,
+          "dialog": "dialogScoped-child"
+        }
+      ]
+    }
+  ]
+}
