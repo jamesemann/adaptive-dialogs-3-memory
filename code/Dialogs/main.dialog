@@ -1,0 +1,36 @@
+{
+  "$schema": "../app.schema",
+  "$kind": "Microsoft.AdaptiveDialog",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "prompt": "What's the secret?",
+          "property": "user.secret"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "user.secret == '1234'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "You got it"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "condition": "user.secret != '1234'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "activity": "Sorry, that's not right"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
