@@ -15,7 +15,7 @@
           "actions": [
             {
               "$kind": "Microsoft.SendActivity",
-              "activity": "[send] udialog.dialogScopedValue is null, prompting for value"
+              "activity": "[send] dialog.dialogScopedValue is null, prompting for value"
             },
             {
               "$kind": "Microsoft.TextInput",
