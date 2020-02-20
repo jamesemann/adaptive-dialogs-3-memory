@@ -1,5 +1,5 @@
 {
-    "name": "adaptive-dialogs-2-simple-example",
+    "name": "adaptive-dialogs-3-simple-example",
     "description": "",
     "services": [
         {
@@ -14,5 +14,5 @@
     "padlock": "",
     "version": "2.0",
     "overrides": null,
-    "path": ".\\adaptive-dialogs-2-simple-example.bot"
+    "path": ".\\adaptive-dialogs-3-simple-example.bot"
 }

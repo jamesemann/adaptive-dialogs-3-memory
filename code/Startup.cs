@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace adaptive_dialogs_2_simple_example
+namespace adaptive_dialogs_3
 {
     public class Startup
     {

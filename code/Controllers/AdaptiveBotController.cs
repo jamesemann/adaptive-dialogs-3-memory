@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 
-namespace adaptive_dialogs_2_simple_example
+namespace adaptive_dialogs_3
 {
     [Route("api/messages")]
     [ApiController]

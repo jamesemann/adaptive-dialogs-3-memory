@@ -59,5 +59,5 @@ Using the following `.dialog` conversation definition:
 
 #### Running the code
 
-After cloning the repo, either launch the app using Visual Studio or from dotnet cli using `dotnet run`.  Then connect to the bot using the included Bot Framework Emulator file `adaptive-dialogs-2-simple-example.bot`.
+After cloning the repo, either launch the app using Visual Studio or from dotnet cli using `dotnet run`.  Then connect to the bot using the included Bot Framework Emulator file `adaptive-dialogs-3-simple-example.bot`.
 

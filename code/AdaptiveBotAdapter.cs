@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs.Adaptive;
 using Microsoft.Bot.Builder.Dialogs.Debugging;
@@ -10,7 +10,7 @@ using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace adaptive_dialogs_2_simple_example
+namespace adaptive_dialogs_3
 {
     public class AdaptiveBotAdapter : BotFrameworkHttpAdapter
     {

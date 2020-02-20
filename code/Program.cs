@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace adaptive_dialogs_2_simple_example
+namespace adaptive_dialogs_3
 {
     public class Program
     {

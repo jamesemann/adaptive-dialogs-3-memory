@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>adaptive_dialogs_2_simple_example</RootNamespace>
+    <RootNamespace>adaptive_dialogs_3</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
